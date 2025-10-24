@@ -1,0 +1,33 @@
+[package]
+name = "code-reviewer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+async-trait = "0.1"
+
+# LLM Integration (we'll start with this)
+llm-connector = "0.5"
+reqwest = { version = "0.12", features = ["json", "stream"] }
+
+# CLI
+clap = { version = "4.5", features = ["derive"] }
+colored = "3.0"
+
+# Config
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.9.8"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "2.0.17"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
