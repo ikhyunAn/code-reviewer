@@ -189,7 +189,7 @@ This project is in early development. Contributions, ideas, and feedback are wel
 
 ## License
 
-_To be determined_
+This project is licensed under a **Custom Non-Commercial License (MIT-NC Variant)** — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
